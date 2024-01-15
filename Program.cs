@@ -96,3 +96,56 @@
 // string newNum= GetNumber();
 
 // System.Console.WriteLine("Число = " +newNum);
+
+// Задайте одномерный массив, заполненный случайными
+// числами. Определите количество простых чисел в этом
+// массиве.
+// Примеры
+// [1 3 4 19 3] => 2
+// [4 3 4 1 9 5 21 13] => 3
+
+// System.Console.WriteLine("Введите число");
+// int sizeArray= Convert.ToInt32(Console.ReadLine());
+
+// int [] array = new int[sizeArray];
+
+// void GetArray()
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(3,10);
+//     }
+// }
+
+// void PrintArray()
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i]+ " ");
+//     }  
+// }
+
+// int FindCountSimpleNumbers()
+// {
+//     int countElemts=0;
+
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         bool find = false;
+
+//         for (int j = 2; j <= Math.Sqrt(array[i]); j++)
+//         {
+//             if(array[i] % j ==0)
+//             {
+//                 find=true;
+                
+//             }
+//         }
+
+//         if(find ==false)
+//         {
+//             countElemts++;
+//         }
+//     }
+//     return countElemts;
+// }
